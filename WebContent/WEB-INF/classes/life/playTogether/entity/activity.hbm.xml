@@ -6,18 +6,19 @@
     <hibernate-mapping>
     <class name="life.playTogether.entity.Activity" table="t_activity">
     <id name="a_id" >
-    <generator class="native"></generator>
+    	<generator class="native" />
     </id>
-     <property name="a_userName" />
-     <property name="a_userImg" />
-     <property name="a_date" generated="insert" type="java.sql.Timestamp">
-     	<column name="a_date" default="current_timestamp" sql-type="timestamp" not-null="true"/>
-     </property>
-     <property name="a_title" />
-     <property name="a_img" />
-     <property name="a_content" />
-     <property name="a_praiseNumber" />
-     <property name="a_commentNumber" />
-     <property name="a_shareUrl" />
+    <property name="a_phone" />
+    <property name="a_userName" />
+    <property name="a_userImg" />
+    <property name="a_date" generated="insert" type="java.sql.Timestamp">
+    	<column name="a_date" default="current_timestamp" sql-type="timestamp" not-null="true"/>
+    </property>
+    <property name="a_title" />
+    <property name="a_img" />
+    <property name="a_content" />
+    <property name="a_praiseNumber" />
+    <property name="a_commentNumber" />
+    <property name="a_shareUrl" />
    </class>
    </hibernate-mapping>

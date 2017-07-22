@@ -9,9 +9,7 @@
 <body>
 	<form enctype="multipart/form-data" method="post"
 		action="addActivity">
-		userName:<input type="text" name="a_userName" /><br>
-		userUrlImg：<input type="text" name="a_userImg" /><br> 
-		时间：<input type="text" name="a_date" /><br> 
+		phone:<input type="text" name="a_phone" /><br>
 		请求标题：<input type="text" name="a_title" /><br>
 		文件上传：<input type="file" name="a_img" /><br>  
 		发布内容：<input type="text" name="a_content" /><br>

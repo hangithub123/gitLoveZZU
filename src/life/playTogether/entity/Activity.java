@@ -1,11 +1,12 @@
 package life.playTogether.entity;
 
 import java.util.Date;
-
 import org.springframework.stereotype.Component;
+
 @Component(value="activity")
 public class Activity {
 	private int a_id;
+	private String a_phone;
 	private String a_userName;//用户名
 	private String a_userImg;//用户头像URL地址
 	private Date a_date;//发布的时间
@@ -20,6 +21,12 @@ public class Activity {
 	}
 	public void setA_id(int a_id) {
 		this.a_id = a_id;
+	}
+	public String getA_phone() {
+		return a_phone;
+	}
+	public void setA_phone(String a_phone) {
+		this.a_phone = a_phone;
 	}
 	public String getA_userName() {
 		return a_userName;

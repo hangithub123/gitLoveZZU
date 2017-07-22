@@ -20,6 +20,7 @@
 <!-- 文件上传下载模块 -->
 <include file="com/zzu/struts/xml/module.fileDU.xml"/>
 <!-- 校园新闻首页图片上传下载模块 -->
+<include file="com/zzu/struts/xml/module.Activity.xml"/>
 <include file="com/zzu/struts/xml/module.img.xml"/>
 <include file="com/zzu/struts/xml/module.news.xml"/>
 <include file="com/zzu/struts/xml/module.taoyu.xml"/>

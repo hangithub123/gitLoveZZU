@@ -14,7 +14,6 @@ import org.springframework.stereotype.Controller;
 
 import com.opensymphony.xwork2.ActionSupport;
 import com.zzu.entity.Advisory;
-import com.zzu.entity.Results;
 import com.zzu.service.AdvisoryService;
 
 

@@ -17,6 +17,7 @@ import persionalCenter.confessionWall.entity.BareHeartPraise;
 import persionalCenter.confessionWall.service.BareHeartPraiseService;
 import persionalCenter.confessionWall.service.BareHeartService;
 
+@SuppressWarnings("serial")
 @Controller(value="addBareHeartPraiseAction")
 @Scope(value="prototype")
 public class AddBareHeartPraiseAction extends ActionSupport{

@@ -9,18 +9,17 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import life.playTogether.entity.Activity;
-import life.playTogether.service.ActivityService;
+import life.playTogether.service.AddActivityService;
 
 import org.apache.struts2.ServletActionContext;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
-import org.springframework.transaction.annotation.Transactional;
 
 import com.google.gson.Gson;
 import com.opensymphony.xwork2.ActionSupport;
 import com.zzu.entity.Results;
 
-@Transactional
+
 @Component(value="activityAction")
 @Scope(value="prototype")
 public class ActivityAction extends ActionSupport{
@@ -30,10 +29,10 @@ public class ActivityAction extends ActionSupport{
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
+	
 	@Resource(name="activityService")
-	private ActivityService activityService;
-	@Resource(name="activity")
-	private Activity activity;
+	private AddActivityService activityService;
+
 	@Resource(name="results")
 	private Results results;
 	
@@ -43,7 +42,7 @@ public class ActivityAction extends ActionSupport{
 		String page=request.getParameter("page");
 		int intpage= Integer.parseInt(page);
 		
-		List al =(ArrayList)activityService.findByPage(intpage, 6);
+		List<Activity> al =(ArrayList<Activity>)activityService.findByPage(intpage, 6);
 		results.setResults(al);
 		results.setNumber(intpage);
 		
@@ -54,7 +53,7 @@ public class ActivityAction extends ActionSupport{
 		response.setHeader("Content-type", "text/html;charset=UTF-8");
 	         PrintWriter out=response.getWriter();
 	    	 out.println(jsonObject);
-	    	// System.out.println(jsonObject);
+	    	 System.out.println(jsonObject);
 	    	 out.flush();
 	    	 out.close();
 		return NONE;

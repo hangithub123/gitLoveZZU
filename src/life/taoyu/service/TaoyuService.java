@@ -5,9 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import javax.annotation.Resource;
-import javax.servlet.http.HttpSession;
 
-import org.apache.struts2.ServletActionContext;
 import org.springframework.stereotype.Component;
 
 import org.springframework.transaction.annotation.Transactional;

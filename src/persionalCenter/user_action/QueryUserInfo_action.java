@@ -40,7 +40,7 @@ public class QueryUserInfo_action extends ActionSupport implements ModelDriven<U
 	public String execute() throws Exception {
 		String[] userinfoDatas;
 		
-		if(!userinfo.getPhone().equals("") && userinfo !=null){
+		if(userinfo !=null && !userinfo.getPhone().equals("") ){
 		userinfoDatas=userService.query(userinfo);
 		
 		

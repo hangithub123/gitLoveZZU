@@ -9,10 +9,9 @@
 		 -->
 		
 		
-		<action name="addActivity" class="addActivityAction" method="upload">
-			<result name="success">/activitySuccess.jsp</result>
-		</action>
+		<action name="addActivity" class="addActivityAction" method="upload"></action>
 		<action name="activity" class="activityAction"></action>
+		<action name="activityPraise" class="activityPraiseAction"></action>
 	</package>
 	
 </struts>

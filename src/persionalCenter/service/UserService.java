@@ -3,13 +3,12 @@ package persionalCenter.service;
 import java.io.Serializable;
 import java.text.ParseException;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.UUID;
 
 import javax.annotation.Resource;
 
-import org.springframework.stereotype.Service;
+import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
 
 import persionalCenter.dao.Dao;
@@ -17,7 +16,7 @@ import persionalCenter.entity.User;
 import persionalCenter.entity.UserInfo;
 import zzu.util.GetDate;
 @Transactional
-@Service(value="User_Service")
+@Component(value="User_Service")
 public class UserService {
 
 	@Resource(name="user_Dao")
